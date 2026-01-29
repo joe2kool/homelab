@@ -15,3 +15,13 @@ This repository contains my personal homelab infrastructure, services, and docum
 - 1TB NAS-style storage
 - Samba file sharing
 - Docker (local + Pi)
+
+ECR repo Url = 487123916271.dkr.ecr.us-east-1.amazonaws.com/lab-api
+Tag = v1
+
+
+$REGION="us-east-1"
+$ECR_URL="487123916271.dkr.ecr.us-east-1.amazonaws.com/lab-api"
+$IMAGE_NAME="lab-api"
+$TAG="v1"
+aws ecr get-login-password --region $REGION | docker login -
