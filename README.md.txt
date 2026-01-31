@@ -30,3 +30,4 @@ aws ecr get-login-password --region $REGION | docker login -
 ##ECS Fargate
 Access: http://52.86.133.212:3000
 Note: public IP can change when task restarts
+How to resume: terraform apply -var="desired_count=1"
